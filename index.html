@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vignesh Tours & Travels | Goa Taxi Service</title>
+<meta name="description" content="Vignesh Tours & Travels - tourist taxi service in Goa. Airport transfers, Goa sightseeing, local taxi and outstation trips.">
+<style>
+*{box-sizing:border-box}body{margin:0;font-family:Arial,Helvetica,sans-serif;color:#10233f;background:#fff}
+header{background:#071b36;color:white;padding:15px 6%;display:flex;justify-content:space-between;align-items:center;position:sticky;top:0;z-index:5}
+.logo{font-size:22px;font-weight:800}.logo span{color:#f3a51b}
+nav a{color:white;text-decoration:none;margin-left:20px;font-weight:600}
+.hero{background:#071b36;color:white;padding:30px 6% 45px;text-align:center}.hero img{width:100%;max-width:1100px;border-radius:18px;display:block;margin:auto;box-shadow:0 15px 40px #0005}
+.cta{display:inline-block;background:#f3a51b;color:#071b36;text-decoration:none;font-weight:800;padding:14px 24px;border-radius:30px;margin:20px 8px}
+.whatsapp{background:#20b957;color:white}.section{padding:55px 6%;max-width:1200px;margin:auto}.section h2{text-align:center;font-size:32px;margin-top:0}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px}.card{padding:24px;border-radius:16px;background:#f5f7fa;border:1px solid #e5e9ef}.card h3{margin-top:0}
+.booking{background:#f3a51b;padding:35px;border-radius:20px}.booking form{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px}.booking input,.booking select,.booking textarea{padding:13px;border:1px solid #ddd;border-radius:9px;width:100%}.booking button{padding:14px;border:0;border-radius:9px;background:#071b36;color:white;font-weight:800;cursor:pointer}
+footer{background:#071b36;color:white;padding:35px 6%;text-align:center}.small{font-size:14px;color:#65758b}
+@media(max-width:700px){nav{display:none}.hero h1{font-size:30px}}
+</style>
+</head>
+<body>
+<header>
+  <div class="logo">VIGNESH <span>TOURS & TRAVELS</span></div>
+  <nav><a href="#services">Services</a><a href="#fleet">Fleet</a><a href="#booking">Book</a><a href="#contact">Contact</a></nav>
+</header>
+
+<section class="hero">
+  <h1>Your Trusted Travel Partner in Goa</h1>
+  <p>Airport Transfers • Goa Sightseeing • Local Taxi • Outstation Trips • 24×7 Service</p>
+  <img src="vignesh-goa-taxi.jpg" alt="Vignesh Tours & Travels Goa taxi service">
+  <a class="cta whatsapp" href="https://wa.me/919158982056?text=Hello%20Vignesh%20Tours%20%26%20Travels,%20I%20want%20to%20book%20a%20taxi%20in%20Goa.">Book on WhatsApp</a>
+  <a class="cta" href="tel:+919158982056">Call 91589 82056</a>
+</section>
+
+<section class="section" id="services">
+<h2>Our Services</h2>
+<div class="grid">
+<div class="card"><h3>✈️ Airport Transfers</h3><p>Convenient pickup and drop services for Goa airport and major travel points.</p></div>
+<div class="card"><h3>🏝️ Goa Sightseeing</h3><p>Comfortable North Goa and South Goa sightseeing trips.</p></div>
+<div class="card"><h3>🚕 Local Taxi</h3><p>Tourist taxi service for local travel across Goa.</p></div>
+<div class="card"><h3>🛣️ Outstation Trips</h3><p>Plan comfortable outstation journeys from Goa.</p></div>
+</div>
+</section>
+
+<section class="section" id="fleet">
+<h2>Vehicle Options</h2>
+<div class="grid">
+<div class="card"><h3>Maruti Suzuki Fronx</h3><p>Comfortable option for couples and small families.</p></div>
+<div class="card"><h3>Maruti Suzuki Baleno</h3><p>Economical and comfortable travel option.</p></div>
+<div class="card"><h3>Tourist Taxi</h3><p>Commercial tourist-permit vehicles available subject to booking.</p></div>
+</div>
+<p class="small">Vehicle images shown on this initial website are reference images. Actual vehicle availability may vary.</p>
+</section>
+
+<section class="section" id="booking">
+<h2>Request a Booking</h2>
+<div class="booking">
+<form onsubmit="sendWhatsApp(event)">
+<input id="name" placeholder="Your Name" required>
+<input id="phone" placeholder="Mobile Number" required>
+<input id="pickup" placeholder="Pickup Location" required>
+<input id="drop" placeholder="Drop Location" required>
+<input id="date" type="date" required>
+<input id="time" type="time" required>
+<select id="passengers"><option>1-3 Passengers</option><option>4-5 Passengers</option><option>6-7 Passengers</option></select>
+<textarea id="message" placeholder="Any special request"></textarea>
+<button type="submit">Send Booking Request on WhatsApp</button>
+</form>
+</div>
+</section>
+
+<section class="section" id="contact">
+<h2>Contact Vignesh Tours & Travels</h2>
+<div class="grid">
+<div class="card"><h3>📞 Call / WhatsApp</h3><p>91589 82056</p></div>
+<div class="card"><h3>📍 Based in</h3><p>Vasco, Goa • Service across Goa</p></div>
+<div class="card"><h3>💳 UPI</h3><p>9158982056 (GPay / PhonePe)</p></div>
+<div class="card"><h3>✉️ Email</h3><p>hullursachin17@gmail.com</p></div>
+</div>
+</section>
+
+<footer>
+<strong>VIGNESH TOURS & TRAVELS</strong><br>
+Your Trusted Travel Partner in Goa<br><br>
+© 2026 Vignesh Tours & Travels. All rights reserved.
+</footer>
+
+<script>
+function sendWhatsApp(e){
+ e.preventDefault();
+ const msg = `Hello Vignesh Tours & Travels,%0A%0AName: ${name.value}%0APhone: ${phone.value}%0APickup: ${pickup.value}%0ADrop: ${drop.value}%0ADate: ${date.value}%0ATime: ${time.value}%0APassengers: ${passengers.value}%0ASpecial request: ${message.value}`;
+ window.open('https://wa.me/919158982056?text='+msg,'_blank');
+}
+</script>
+</body>
+</html>
